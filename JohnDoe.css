@@ -1,0 +1,223 @@
+/* Title styling */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0;
+    animation: colorChange 3s infinite;
+}
+/* Keyframes for color cycling */
+@keyframes colorChange {
+    0% {
+        color: blue;
+    }
+    25% {
+        color: green;
+    }
+    50% {
+        color: lightgreen;
+    }
+    75% {
+        color: orange;
+    }
+    100% {
+        color: blueviolet;
+    }
+}
+/* Search container styling */
+.search-container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-grow: 1; /* Center the search bar vertically */
+}
+
+/* Search bar input styling */
+.search-bar {
+    padding: 15px; /* Increase padding for a larger field */
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 400px; /* Make the input wider */
+}
+
+/* Search button styling */
+.search-button {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.search-button:hover {
+    background-color: lightslategray;
+}
+/* Navbar styling  (upper bar)*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4285b4;
+    color: white;
+    position: relative;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+}
+
+/* Container for Name & Description */
+.container {
+    padding: 20px;
+    width: 500px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+/* Pie Chart Container */
+.pie-chart-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Pie Chart */
+.pie-chart {
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Pie Chart Labels */
+.pie-chart-labels {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+
+.label-item {
+    display: flex;
+    align-items: center;
+}
+
+.color-box {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+/* Comment Section */
+.comment-section {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.comment-section h2 {
+    margin-bottom: 10px;
+}
+
+.comment-box {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: none;
+}
+
+.submit-comment {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.submit-comment:hover {
+    background-color: #218838;
+}
+
+.comments-list {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 6px;
+}
+
+.comment {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+/* stars review */
+.star-rating {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.star:hover,
+.star.selected {
+    color: gold;
+}
+.rating {
+    color: gold;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.overall{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
